@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <meta name="apple-touch-fullscreen" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title id="title">鸣人真爱寻探记</title>
+    <div id='wx_pic' style='margin:0 auto;display:none;'>
+        <img data-src='assets/images/p4-1.png' width="100" />
+    </div>
+    <!-- injector:css -->
+    <link rel="stylesheet" href="assets/stylesheets/swiper.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/main.css"/>
+    <!-- endinjector -->
+</head>
+<body>
+
+<!-- 背景音乐   -->
+<audio src="assets/audio/bgm.mp3"  autoplay loop controls="controls" id="audio" style="display: none;"></audio>
+<audio src="assets/audio/button-1.mp3" controls="controls" id="audio2" style="display: none;"></audio>
+<audio src="assets/audio/button-2.mp3" controls="controls" id="audio3" style="display: none;"></audio>
+<img src="assets/images/m-img.png" class="mp3-box">
+<div class="loading_box" >
+    <img src="assets/images/loading-1.jpg" class="loading-body">
+    <img src="assets/images/loading-text.jpg" class="loading-img" alt=""/>
+    <p class="loading-text"></p>
+</div>
+<!-- injector:js -->
+<script src="assets/scripts/jquery-2.1.3.min.js"></script>
+
+<script src="assets/scripts/swiper.js"></script>
+<script src="assets/scripts/main.js"></script>
+<!-- less compiler -->
+
+<!-- endinjector -->
+<div class="swiper-container" style="display: none">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide scene scene01">
+            <img data-src="assets/images/index.jpg" style="width: 100%">
+            <!-- hand -->
+            <img data-src="assets/images/yun-l.png" style="width: 50%" class="yun">
+            <img data-src="assets/images/yun-r.png" style="width: 50%" class="yun1">
+            <img data-src="assets/images/logo.png" class="logo" >
+            <img data-src="assets/images/btn.png" class="btn">
+        </div>
+        <div class="swiper-slide scene scene02">
+            <!-- title -->
+            <img data-src="assets/images/p1-title.png" class="title" style="width: 50%;top: 2%;left: 23.5%;">
+            <!-- 鸣人本体 -->
+            <img data-src="assets/images/p1-bg.jpg" style="width: 100%;top: 11%;">
+            <img data-src="assets/images/p1-1.png" style="width: 100%;top: 10%;" class="people—img star">
+            <img data-src="assets/images/p1-A.png" style="width: 100%;top: 10%;" class="people—img A_img">
+            <img data-src="assets/images/p1-B.png" style="width: 100%;top: 10%;" class="people—img B_img">
+            <!-- 选B show img -->
+            <img data-src="assets/images/p1-B-alert.png" class="p1-B-alert" style="display: none">
+            <img data-src="assets/images/hengfu.png" style="width: 100%;top: 7.8%;">
+            <img data-src="assets/images/hengfu.png" style="width: 100%;top: 69.3%;">
+            <!-- 选题 -->
+            <div class="dn_l reply">
+                <img data-src="assets/images/mz01.png" style="width: 100%">
+            </div>
+            <div class="dn_r reply">
+                <img data-src="assets/images/mz02.png" style="width: 100%">
+            </div>
+            <!-- 确定按钮 -->
+            <div class="btn_define"></div>
+
+            <!-- bg 遮罩 -->
+            <div class="true_box alert_box">
+                <img data-src="assets/images/zan.png"   >
+                <img data-src="assets/images/p2-true-text.jpg" class="true_box_text">
+            </div>
+            <div class="false_box alert_box">
+                <img data-src="assets/images/error.png" style="width: 100%;top: 13.8%">
+                <img data-src="assets/images/p1-alert-text.jpg" style="width: 66%;top: 20%;left: 17%">
+            </div>
+            <div class="bg_zz">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="swiper-slide scene scene03">
+            <!-- title -->
+            <img data-src="assets/images/p2-title.png" class="title" style="width: 81%;top: 2.4%;left: 8.3%;">
+            <!-- 鸣人本体 -->
+            <img data-src="assets/images/p2-bg.jpg" style="width: 100%;top: 10%;">
+            <img data-src="assets/images/p2-1.png" style="width: 100%;top: 10%;" class="people—img star">
+            <img data-src="assets/images/p2-A.png" style="width: 100%;top: 10%;" class="people—img A_img">
+            <img data-src="assets/images/p2-B.png" style="width: 100%;top: 10%;" class="people—img B_img">
+            <!-- 选A show img -->
+            <img data-src="assets/images/p2-A-alert.png" class="p2-A-alert" style="display: none">
+            <img data-src="assets/images/hengfu.png" style="width: 100%;top: 7.8%;">
+            <img data-src="assets/images/hengfu.png" style="width: 100%;top: 69.3%;">
+            <!-- 选题 -->
+            <div class="dn_l reply">
+                <img data-src="assets/images/lm01.png" style="width: 100%">
+                <img data-src="assets/images/lm01-2.png" style="width: 100%" class="active-text">
+            </div>
+            <div class="dn_r reply">
+                <img data-src="assets/images/lm02-1.png" style="width: 100%" >
+                <img data-src="assets/images/lm02.png" style="width: 100%" class="active-text">
+
+            </div>
+            <!-- 确定按钮 -->
+            <div class="btn_define"></div>
+            <!-- bg 遮罩 -->
+            <div class="true_box alert_box">
+                <img data-src="assets/images/zan.png"   >
+                <img data-src="assets/images/p3-true-text.jpg" class="true_box_text">
+            </div>
+            <div class="false_box alert_box">
+                <img data-src="assets/images/error.png" style="width: 100%;top: 13.8%">
+                <img data-src="assets/images/p1-alert-text.jpg" style="width: 66%;top: 20%;left: 17%">
+            </div>
+            <div class="bg_zz">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="swiper-slide scene scene04">
+            <!-- title -->
+            <img data-src="assets/images/p3-title.png" class="title" style="width: 66.8%;top: 2.1%;left: 15.1%;">
+            <!-- 鸣人本体 -->
+            <img data-src="assets/images/p3-1.png" style="width: 100%;top: 10%;" class="people—img star">
+            <img data-src="assets/images/p3-1-bg.png" style="width: 100%;top: 10%;" class="people—img A_bg star">
+            <img data-src="assets/images/p3-bg.jpg" style="width: 100%;top: 10.3%;" class="people—img A_img people-bg">
+            <img data-src="assets/images/p3-A.png" style="width: 100%;top: 10.3%;" class="people—img A_img">
+            <img data-src="assets/images/p3-bg.jpg" style="width: 100%;top: 10.3%;" class="people—img people-bg2">
+            <img data-src="assets/images/p3-B.png" style="width: 100%;top: 10.3%;" class="people—img B_img">
+            <img data-src="assets/images/p3-B-bg.jpg" style="width: 100%;top: 9%;left: 3%" class="people—img B_img B_bg">
+            <!-- 选B show img -->
+            <img data-src="assets/images/hengfu.png" style="width: 100%;top: 7.8%;">
+            <img data-src="assets/images/hengfu.png" style="width: 100%;top: 69.3%;">
+            <!-- 选题 -->
+            <div class="dn_l reply">
+                <img data-src="assets/images/sy01.png" style="width: 100%">
+                <img data-src="assets/images/sy01-1.png" style="width: 100%" class="active-text">
+            </div>
+            <div class="dn_r reply">
+                <img data-src="assets/images/sy02-1.png" style="width: 100%" >
+                <img data-src="assets/images/sy02.png" style="width: 100%" class="active-text">
+
+            </div>
+            <!-- 确定按钮 -->
+            <div class="btn_define"></div>
+
+            <!-- bg 遮罩 -->
+            <div class="true_box alert_box">
+                <img data-src="assets/images/zan.png"   >
+                <img data-src="assets/images/p4-true-text.jpg" class="true_box_text">
+            </div>
+            <div class="false_box alert_box">
+                <img data-src="assets/images/error.png" style="width: 100%;top: 13.8%">
+                <img data-src="assets/images/p1-alert-text.jpg" style="width: 66%;top: 20%;left: 17%">
+            </div>
+            <div class="bg_zz">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="swiper-slide scene scene05">
+            <!-- title -->
+            <img data-src="assets/images/p4-title.png" class="title" style="width: 66.8%;top: 2.1%;left: 15.1%;">
+            <!-- 鸣人本体 -->
+            <img data-src="assets/images/p4-bg.jpg" style="width: 100%;top: 10%;">
+            <!-- 云 -->
+            <img data-src="assets/images/p4-yun.jpg" style="width:40.4%;top: 50%; "  class="p4-yun">
+            <img data-src="assets/images/p4-yun2.jpg" style="width:40.4%;top: 37%; " class="p4-yun2">
+            <img data-src="assets/images/p4-yun4.jpg" style="width:28.1%;top: 20%; " class="p4-yun4">
+            <img data-src="assets/images/p4-1.png" style="width: 100%;top: 10%;" class="people—img star">
+            <img data-src="assets/images/p4-1-xin.png" style="width: 8.6%;top: 44%;left: 40%" class="people—img p4-1-xin">
+            <img data-src="assets/images/p4-A.png" style="width: 100%;top: 10%;" class="people—img A_img">
+            <img data-src="assets/images/p4-B.png" style="width: 100%;top: 10%;-webkit-animation:none!important;" class="people—img B_img">
+            <!-- 选B show img -->
+            <img data-src="assets/images/p4-B-alert.png" class="p1-B-alert" style="display: none;width: 80.4%;right: 0%;top: 32.6%;">
+            <img data-src="assets/images/hengfu.png" style="width: 100%;top: 7.8%;">
+            <img data-src="assets/images/hengfu.png" style="width: 100%;top: 69.3%;">
+            <!-- 选题 -->
+            <div class="dn_l reply">
+                <img data-src="assets/images/xh01.png" style="width: 100%">
+                <img data-src="assets/images/xh01-1.png" style="width: 100%" class="active-text">
+            </div>
+            <div class="dn_r reply">
+                <img data-src="assets/images/xh02-1.png" style="width: 100%" >
+                <img data-src="assets/images/xh02.png" style="width: 100%" class="active-text">
+            </div>
+            <!-- 确定按钮 -->
+            <div class="btn_define"></div>
+
+            <!-- bg 遮罩 -->
+            <div class="bg_zz">&nbsp;</div>
+            <div class="false_box alert_box true_box">
+                <img data-src="assets/images/error.png" style="width: 100%;top: 13.8%;">
+                <img data-src="assets/images/p4-alert-text.jpg" style="width: 49.9%;top: 21.7%;left: 26.5%">
+            </div>
+            <div class="bg_zz">
+                &nbsp;
+            </div>
+        </div>
+
+        <!-- 选择 page -->
+        <div class="swiper-slide scene scene06">
+            <!-- 分享链接 -->
+            <img data-src="assets/images/p6-02.jpg" style="width: 78.2%;top: 6.3%;left: 10.7%;" class="p6-01">
+            <img data-src="assets/images/p6-text.png" style="width:78.2%;right: 11.3%;top: 5.9%" class="fenx_text ">
+            <a href="#" class="fenx_btn fx_btn1">
+                <img data-src="assets/images/p6-btn.png" style="width: 100%" class="">
+            </a>
+            <a href="#" class="fenx_btn fx_btn2">
+                <img data-src="assets/images/p6-btn2.png" style="" class="">
+            </a>
+        </div>
+
+        <!-- 分享 page -->
+        <div class="swiper-slide scene scene07">
+            <div class="index-body">
+            </div>
+            <img data-src="assets/images/p7-ko.png" style="width:85.3%;left: 6.7%;top: 2.3%" class="p7-ko">
+            <img data-src="assets/images/p7-06.jpg" style="width: 93%;left: 5%;top: 1.9%" class="p7-06">
+            <a href="#" class="fenx_btn zban-btn">
+                <img data-src="assets/images/p7-btn2.png"  >
+            </a>
+            <a href="#" class="fenx_btn" id="r_paly">
+                <img data-src="assets/images/p7-btn.png"  >
+            </a>
+        </div>
+
+        <!-- 获取测试资格 page -->
+        <div class="swiper-slide scene scene08">
+            <img data-src="assets/images/p8.jpg" style="width: 100%">
+            <img data-src="assets/images/p8-text-bg.png" style="width:27.5%" class="p8-text p8-bg">
+            <img data-src="assets/images/p8-text.png" style="width:27.5%" class="p8-text ">
+            <a class="p8-btn" href="http://s.p.qq.com/pub/jump?d=AAAM1HfN&_wv=1027">
+                <img data-src="assets/images/p8-btn.png" style="width: 100%">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
